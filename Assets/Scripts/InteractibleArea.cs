@@ -15,4 +15,11 @@ public class InteractibleArea : MonoBehaviour
     {
         
     }
+
+    void OnCollisionEnter (Collision col){
+    Destroy(col.gameObject);
+    }
+
+
 }
+
