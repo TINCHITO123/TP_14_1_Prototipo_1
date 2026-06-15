@@ -4,22 +4,14 @@ using UnityEngine;
 
 public class InteractibleArea : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public ScoreUiManager ScoreUi;
+
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Coleccionable"))
+        {
+            Destroy(other.gameObject);
+            ScoreUi.AddPointAndUpdateScore();
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void OnCollisionEnter (Collision col){
-    Destroy(col.gameObject);
-    }
-
-
 }
-
