@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 
 public class ScoreUiManager : MonoBehaviour
@@ -10,12 +8,12 @@ public class ScoreUiManager : MonoBehaviour
 
     void Start()
     {
-        txtScore.text = score.ToString();
+        txtScore.text = "Score: " + score;
     }
 
     public void AddPointAndUpdateScore()
     {
         score++;
-        txtScore.text = score.ToString();
+        txtScore.text = "Score: " + score;
     }
 }
