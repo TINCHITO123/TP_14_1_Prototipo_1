@@ -7,21 +7,11 @@ public class TimerUiMannager : MonoBehaviour
 {
     public TextMeshProUGUI txtTimer;
 
-    float timeRemaining = 60f;
-
-    void Start()
+    // El tiempo ahora es controlado por el GameManager. 
+    // Este método recibe los datos y actualiza el texto en pantalla.
+    public void ActualizarTextoTimer(float timeRemaining)
     {
-    }
-
-    void Update()
-    {
-        if (timeRemaining > 0)
-        {
-            timeRemaining -= Time.deltaTime;
-
-            int seconds = Mathf.CeilToInt(timeRemaining);
-
-            txtTimer.text = "00:" + seconds.ToString("00");
-        }
+        int seconds = Mathf.CeilToInt(timeRemaining);
+        txtTimer.text = "00:" + seconds.ToString("00");
     }
 }
