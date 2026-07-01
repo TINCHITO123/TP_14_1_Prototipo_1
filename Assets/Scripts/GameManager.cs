@@ -46,4 +46,12 @@ public class GameManager : MonoBehaviour
         uiManager.MostrarPantallaGameOver();
         Time.timeScale = 0f; // Congela el juego
     }
+
+    // NUEVA FUNCIÓN: Llamá a esto cuando el jugador cumpla el objetivo en el aula
+    public void ActivarWin()
+    {
+        juegoTerminado = true;
+        uiManager.MostrarPantallaWin(); // Acordate de armar esta función en tu UIManager
+        Time.timeScale = 0f; // Congela el juego al ganar
+    }
 }

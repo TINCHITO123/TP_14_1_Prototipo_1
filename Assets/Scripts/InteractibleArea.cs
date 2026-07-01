@@ -8,7 +8,7 @@ public class InteractibleArea : MonoBehaviour
     public UIManager uiManager;       // Nueva referencia
     public GameManager gameManager;   // Nueva referencia
 
-    public int puntajeMaximo = 5;     // Cantidad de coleccionables para ganar (ajústalo a tu gusto)
+    public int puntajeMaximo = 2;     // Cantidad de coleccionables para ganar (ajústalo a tu gusto)
 
     void OnTriggerEnter(Collider other)
     {

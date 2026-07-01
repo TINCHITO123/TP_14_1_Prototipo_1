@@ -2,7 +2,7 @@
 
 public class UIManager : MonoBehaviour
 {
-    // Arrastra aquí tus contenedores/paneles del Canvas desde el Inspector
+    // Arrastra aqui tus contenedores/paneles del Canvas desde el Inspector
     public GameObject panelWin;
     public GameObject panelGameOver;
 
