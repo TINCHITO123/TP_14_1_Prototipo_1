@@ -3,7 +3,9 @@ guid: e1b3232ef75041647b1b3d51032476f5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pantallaWinImagen: {fileID: 100000, guid: fdad9d952ae84cafb74c63f2e694d042, type: 3}
+  - pantallaGameOverImagen: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
